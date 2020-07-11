@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="csrf-param" content="_csrf-backend">
+		<meta name="csrf-token" content="z-Vr7vYa2uEAviidMFfkbcqLWfIjwWbUpdTe2yoeTgr40AKko1OPq27NRfNoOo4F_eUos2b5KpXDpeeoHmoYMg==">
+		<title>欢迎进入hyii2-manage系统</title>
+		<link href="../assets/27b04aa4/css/bootstrap.css" rel="stylesheet">
+		<link href="../themes/css/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet">
+		<link href="../themes/hyii2/css/quirk.css" rel="stylesheet">
+		<link href="../themes/hyii2/css/site.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="headerpanel">
+				<div class="logopanel">
+					<h2><a href="#">Hyii2管理系统</a></h2>
+				</div><!-- logopanel -->
+
+				<div class="headerbar">
+
+					<a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+
+					<ul class="top-menu">
+						<li class="active"><a data-toggle="tab" data-target="#tab-0">主页</a></li>
+						<li class=""><a data-toggle="tab" data-target="#tab-1">站点</a></li>
+						<li class=""><a data-toggle="tab" data-target="#tab-2">系统</a></li>
+					</ul> <!-- 搜索插件保留区域 -->
+
+					<div class="header-right">
+						<ul class="headermenu">
+							<li>
+								<!-- 通知插件保留区域 -->
+							</li>
+
+							<li>
+								<div class="btn-group">
+									<button type="button" class="btn btn-logged" data-toggle="dropdown">
+										<img src="../themes/hyii2/images/avatar/small.jpg" alt="头像">
+										test <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu pull-right">
+										<li><a href="/admin/user/change-password"><i class="fa fa-cog"></i> 修改密码</a></li>
+										<li><a href="/site/logout" data-method="post"><i class="fa fa-sign-out"></i> 退出</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div><!-- header-right -->
+				</div><!-- headerbar -->
+			</div><!-- header-->
+		</header>
+
+		<section>
+
+			<div class="leftpanel">
+				<!-- ################## 左侧菜单区域 ################## -->
+				<div class="leftpanelinner">
+
+					<div class="media leftpanel-profile">
+						<div class="media-left">
+							<a href="#">
+								<img src="../themes/hyii2/images/avatar/small.jpg" alt="" class="media-object img-circle">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">test<a data-toggle="collapse" data-target="#loguserinfo" class="pull-right"></a></h4>
+							<span>管理员</span>
+						</div>
+					</div><!-- leftpanel-profile -->
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab-0">
+							<h5 class="sidebar-title">菜单</h5>
+							<ul class="nav nav-pills nav-stacked nav-quirk">
+								<li class="active">
+									<a href="index.html">
+										<i class="fa fa-dashboard"></i>
+										<span>欢迎页</span>
+									 </a>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane " id="tab-1">
+							<h5 class="sidebar-title">菜单</h5>
+							<ul class="nav nav-pills nav-stacked nav-quirk">
+								<li class="nav-parent"><a href="/site/index"><i class="fa fa-book"></i><span>内容管理</span></a>
+									<ul class="children">
+										<li><a href="/category/index"><i class=""></i><span>分类管理</span></a></li>
+										<li><a href="/article/index"><i class=""></i><span>文章管理</span></a></li>
+									</ul>
+								</li>
+								<li class="nav-parent"><a href="/site/index"><i class="fa fa-file-o"></i><span>文件管理</span></a>
+									<ul class="children">
+										<li><a href="/image/index"><i class=""></i><span>图片管理</span></a></li>
+									</ul>
+								</li>
+								<li class="nav-parent"><a href="/site/index"><i class="fa fa-bar-chart-o"></i><span>统计</span></a>
+									<ul class="children">
+										<li><a href="/statistics/index"><i class=""></i><span>访问统计</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane " id="tab-2">
+							<h5 class="sidebar-title">菜单</h5>
+							<ul class="nav nav-pills nav-stacked nav-quirk">
+								<li class="nav-parent"><a href="/site/index"><i class="fa fa-bars"></i><span>系统管理</span></a>
+									<ul class="children">
+										<li><a href="/admin/menu/index"><i class=""></i><span>菜单</span></a></li>
+										<li><a href="/admin/route/index"><i class=""></i><span>路由</span></a></li>
+									</ul>
+								</li>
+								<li class="nav-parent"><a href="/site/index"><i class="fa fa-cog"></i><span>权限管理</span></a>
+									<ul class="children">
+										<li><a href="/admin/permission/index"><i class=""></i><span>权限</span></a></li>
+										<li><a href="/admin/role/index"><i class=""></i><span>角色</span></a></li>
+										<li><a href="/admin/assignment/index"><i class=""></i><span>授权</span></a></li>
+									</ul>
+								</li>
+								<li class="nav-parent"><a href="/site/index"><i class="fa fa-user"></i><span>账户管理</span></a>
+									<ul class="children">
+										<li><a href="/user/index"><i class=""></i><span>管理员</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- 左侧菜单结束 -->
+			</div><!-- leftpanel -->
+
+			<div class="mainpanel">
+				<div class="contentpanel">
+					<ol class="breadcrumb breadcrumb-quirk">
+						<li><a href="/"><i class="fa fa-home mr5"></i> 首页</a></li>
+						<li><a href="/site/index">仪表盘</a></li>
+						<li class="active">欢迎页</li>
+					</ol>
+					<hr class="darken">
+
+					<div class="wellcome">
+						<span>欢迎进入Hyii2-manage管理系统</span>
+					</div>
+				</div>
+
+			</div><!-- mainpanel -->
+
+		</section>
+
+		<div id="page-modal" class="fade modal" role="dialog" data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="../assets/3d3aedab/jquery.js"></script>
+		<script src="../assets/d62fd64d/yii.js"></script>
+		<script src="../themes/hyii2/js/jquery-ui.js"></script>
+		<script src="../themes/hyii2/js/toggles.js"></script>
+		<script src="../themes/hyii2/js/quirk.js"></script>
+		<script src="../themes/hyii2/js/site.js"></script>
+		<script src="../assets/27b04aa4/js/bootstrap.js"></script>
+		<script>
+			jQuery(function($) {
+				jQuery('#page-modal').modal({
+					"show": false
+				});
+			});
+		</script>
+	</body>
+</html>
